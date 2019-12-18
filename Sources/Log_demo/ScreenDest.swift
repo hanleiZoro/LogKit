@@ -10,7 +10,7 @@ import Foundation
 public class ScreenDest: BaseDest {
     
     public override init() { }
-    static let `default` = ScreenDest();
+    public static let `default` = ScreenDest();
     
     var data: [LogInfo] = [];
     public override func send(_ level: Log.Level, msg: String, thread: String, file: String, function: String, line: Int, context: Any?) {
