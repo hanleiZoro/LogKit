@@ -9,7 +9,7 @@ import Foundation
 
 public class ConsoleDest: BaseDest {
     
-    override init() {
+    public override init() {
         super.init();
         
         levelColor.verbose = "💜 "     // silver

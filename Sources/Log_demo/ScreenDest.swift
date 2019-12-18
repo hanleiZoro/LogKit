@@ -9,6 +9,7 @@ import Foundation
 
 public class ScreenDest: BaseDest {
     
+    public override init() { }
     static let `default` = ScreenDest();
     
     var data: [LogInfo] = [];

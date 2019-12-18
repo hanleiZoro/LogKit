@@ -8,7 +8,7 @@
 import Foundation
 
 public class JsonDest: BaseDest {
-    
+    public override init() { }
     override func send(_ level: Log.Level, msg: String, thread: String, file: String, function: String, line: Int, context: Any?) {
         
         let dic: [String: Any] = [

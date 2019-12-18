@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 public class Display {
-    
+    public init() { }
     static let `default` = Display()
     var window: UIWindow?
     var viewController: ConsoleViewController? {

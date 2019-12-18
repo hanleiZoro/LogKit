@@ -14,7 +14,7 @@ public class FileDest: BaseDest {
     let fileManager = FileManager.default;
     var syncAfterEachWrite = false;
     
-    override init() {
+    public override init() {
         let baseURL: URL = fileManager.urls(for: .cachesDirectory, in: .userDomainMask).first!;
         logFileURL = baseURL.appendingPathComponent("Console.log");
         print("打印当前存储地址：\(logFileURL)");
