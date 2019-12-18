@@ -31,12 +31,14 @@ public class ConsoleViewController: UITableViewController {
 //                return item.id == info.id;
 //            }
         let index = screenDest.data.count - 1;
-        let indexPath = IndexPath(row: index, section: 0);
-            tableView.beginUpdates();
-        
-        tableView.insertRows(at: [indexPath], with: .automatic);
-        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true);
-            tableView.endUpdates();
+        data = screenDest.data;
+        tableView.reloadData();
+//        let indexPath = IndexPath(row: index, section: 0);
+//            tableView.beginUpdates();
+//
+//        tableView.insertRows(at: [indexPath], with: .automatic);
+//        tableView.scrollToRow(at: indexPath, at: .bottom, animated: true);
+//            tableView.endUpdates();
 //        } else {
 //            // Fallback on earlier versions
 //        }
