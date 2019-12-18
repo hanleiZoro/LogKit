@@ -17,7 +17,7 @@ public class ConsoleViewController: UITableViewController {
         ScreenDest.default
     }
     
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad();
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseID);
@@ -43,18 +43,18 @@ public class ConsoleViewController: UITableViewController {
     }
 }
 extension ConsoleViewController {
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count;
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseID, for: indexPath);
         let info: LogInfo = data[indexPath.row];
         cell.textLabel?.text = "\(info.level)" + info.text;
         return cell;
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    override public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("当前没有额外显示器，如果有大屏幕显示器将显示详细内容");
         
     }

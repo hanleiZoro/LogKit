@@ -19,7 +19,7 @@ public class ConsoleDest: BaseDest {
         levelColor.error = "❤️ "       // red
     }
     
-    override func send(_ level: Log.Level, msg: String, thread: String, file: String, function: String, line: Int, context: Any? = nil) {
+    override public func send(_ level: Log.Level, msg: String, thread: String, file: String, function: String, line: Int, context: Any? = nil) {
         var formatText: String = format(level: level, msg: msg, thread: thread, file: file, function: function, line: line);
         formatText = colorForLevel(level) + formatText;
         print(formatText);

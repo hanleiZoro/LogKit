@@ -8,7 +8,7 @@
 import Foundation
 
 public struct LogInfo: Codable, Identifiable {
-    var id: String = UUID().uuidString;
+    public var id: String = UUID().uuidString;
     
     var text: String;
     var level: Log.Level = .verbose;
