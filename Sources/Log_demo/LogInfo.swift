@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LogInfo: Codable, Identifiable {
+public struct LogInfo: Codable, Identifiable {
     var id: String = UUID().uuidString;
     
     var text: String;

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ConsoleTableCell: UITableViewCell {
+public class ConsoleTableCell: UITableViewCell {
     
     static let reuseID: String = "ConsoleTable_reuseID";
     

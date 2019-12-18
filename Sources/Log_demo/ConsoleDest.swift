@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ConsoleDest: BaseDest {
+public class ConsoleDest: BaseDest {
     
     override init() {
         super.init();

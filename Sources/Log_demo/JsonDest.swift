@@ -7,7 +7,7 @@
 
 import Foundation
 
-class JsonDest: BaseDest {
+public class JsonDest: BaseDest {
     
     override func send(_ level: Log.Level, msg: String, thread: String, file: String, function: String, line: Int, context: Any?) {
         

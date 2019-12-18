@@ -10,7 +10,7 @@ import UIKit
 
 
 private let reuseID = "ConsoleTable_reuseID"
-class ConsoleViewController: UITableViewController {
+public class ConsoleViewController: UITableViewController {
     
     var data: [LogInfo] = []
     var screenDest: ScreenDest {

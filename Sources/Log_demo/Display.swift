@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class Display {
+public class Display {
     
     static let `default` = Display()
     var window: UIWindow?
