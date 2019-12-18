@@ -42,7 +42,7 @@ extension LogDestAble {
 public class BaseDest: Identifiable, LogDestAble {
     public var id: String = UUID().uuidString;
     
-    init() { }
+    public init() { }
     
     public func send(_ level: Log.Level, msg: String, thread: String, file: String, function: String, line: Int, context: Any?) {
         
